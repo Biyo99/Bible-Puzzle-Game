@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bible Puzzle Game</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#007bff">
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Bible Puzzle Game</h1>
+    <p>Arrange the words to complete the Bible verse!</p>
+  </header>
+  <main>
+    <div id="verse-container"></div>
+    <div id="controls">
+      <button onclick="shuffle()">Shuffle</button>
+      <button onclick="showHint()">Show Hint</button>
+      <button onclick="nextPuzzle()">Next Puzzle</button>
+    </div>
+    <div id="hint"></div>
+    <div id="score">Puzzles Solved: <span id="score-counter">0</span></div>
+  </main>
+  <footer>
+    <p>&copy; 2024 Bible Puzzle Game</p>
+  </footer>
+</body>
+</html>
